@@ -41,6 +41,7 @@ pipeline {
                 docker { 
                     image 'mrc.microsoft.com/playright:v1.39.0-jammy' 
                     reuseNode true 
+                    args '-u root:root'
                     } 
                 }
             steps {
